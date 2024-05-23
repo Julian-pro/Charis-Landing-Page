@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .dark-mode {
+      background-color: #1a202c;
+      color: #cbd5e0;
+    }
+  </style>
+</head>
+<body class="dark-mode">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 shadow-md">
+    <div class="container mx-auto p-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-white">Julian Hinson</div>
+      <div>
+        <a href="#about" class="px-4 text-gray-300 hover:text-white">About</a>
+        <a href="#skills" class="px-4 text-gray-300 hover:text-white">Skills</a>
+        <a href="#projects" class="px-4 text-gray-300 hover:text-white">Projects</a>
+        <a href="#contact" class="px-4 text-gray-300 hover:text-white">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-cover bg-center text-white text-center py-20" style="background-image: url('https://source.unsplash.com/1600x900/?coding,laptop');">
+    <h1 class="text-4xl font-bold">Hi, I'm Julian Fiifi Hinson</h1>
+    <p class="text-xl mt-4">A Software Engineer with expertise in Frontend Development</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-4 text-white">About Me</h2>
+    <p class="text-lg">I am a passionate software engineer with 1 year of experience in frontend development. I enjoy creating beautiful, responsive websites and working on challenging backend problems.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-gray-800 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4 text-white">Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="p-4 bg-gray-700 shadow-md">
+          <h3 class="text-xl font-bold mb-2 text-white">Frontend Development</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>bootstrap</li>
+          </ul>
+        </div>
+        <div class="p-4 bg-gray-700 shadow-md">
+          <h3 class="text-xl font-bold mb-2 text-white">Backend Development</h3>
+          <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>REST APIs</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="p-4 bg-gray-700 shadow-md">
+          <h3 class="text-xl font-bold mb-2 text-white">Tools</h3>
+          <ul>
+            <li>GitHub</li>
+            <li>bootstrap</li>
+            <li>Visual Studio Code</Code></COde></li>
+            <li>sublime text</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-4 text-white">Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="p-4 bg-gray-700 shadow-md">
+        <h3 class="text-xl font-bold mb-2 text-white">Project 1: E-commerce Website</h3>
+        <img src="https://source.unsplash.com/400x200/?ecommerce,website" alt="E-commerce Website" class="mb-4">
+        <p class="text-lg mb-2">Developed a fully functional e-commerce website with features such as product listings, shopping cart, and user authentication.</p>
+        <p class="text-sm"><strong>Technologies Used:</strong> HTML, CSS, JavaScript, React, Node.js, Express, MongoDB</p>
+      </div>
+      <div class="p-4 bg-gray-700 shadow-md">
+        <h3 class="text-xl font-bold mb-2 text-white">Project 2: Personal Blog</h3>
+        <img src="https://source.unsplash.com/400x200/?blog,website" alt="Personal Blog" class="mb-4">
+        <p class="text-lg mb-2">Created a personal blog platform where users can create, edit, and delete their posts. Implemented user authentication and authorization.</p>
+        <p class="text-sm"><strong>Technologies Used:</strong> HTML, CSS, JavaScript, React, Node.js, Express, MySQL</p>
+      </div>
+      <div class="p-4 bg-gray-700 shadow-md">
+        <h3 class="text-xl font-bold mb-2 text-white">Project 3: Task Manager</h3>
+        <img src="https://source.unsplash.com/400x200/?task,management" alt="Task Manager" class="mb-4">
+        <p class="text-lg mb-2">Built a task management application that allows users to create, update, and delete tasks. Integrated features for setting deadlines and priorities.</p>
+        <p class="text-sm"><strong>Technologies Used:</strong> HTML, CSS, JavaScript, React, Java, Spring Boot, PostgreSQL</p>
+      </div>
+      <div class="p-4 bg-gray-700 shadow-md">
+        <h3 class="text-xl font-bold mb-2 text-white">Project 4: Weather App</h3>
+        <img src="https://source.unsplash.com/400x200/?weather,app" alt="Weather App" class="mb-4">
+        <p class="text-lg mb-2">Developed a weather application that fetches and displays weather data from a public API based on user input for location.</p>
+        <p class="text-sm"><strong>Technologies Used:</strong> HTML, CSS, JavaScript, React</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-800 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4 text-white">Contact Me</h2>
+      <form id="contact-form" class="bg-gray-700 p-8 shadow-md">
+        <div class="mb-4">
+          <label for="name" class="block text-lg font-bold text-white">Name</label>
+          <input type="text" id="name" class="w-full p-2 border border-gray-600 bg-gray-800 text-white" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-lg font-bold text-white">Email</label>
+          <input type="email" id="email" class="w-full p-2 border border-gray-600 bg-gray-800 text-white" required>
+        </div>
+        <div class="mb-4">
+          <label for="subject" class="block text-lg font-bold text-white">Subject</label>
+          <input type="text" id="subject" class="w-full p-2 border border-gray-600 bg-gray-800 text-white" required>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-lg font-bold text-white">Message</label>
+          <textarea id="message" class="w-full p-2 border border-gray-600 bg-gray-800 text-white" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <h3 class="text-xl font-bold text-white">Contact Information</h3>
+          <p>Email: jayfhinson@gmail.com</p>
+          <p>Phone: (233) 24-901-2305</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-white">Follow Me</h3>
+          <div class="flex space-x-4 mt-2">
+            <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+            <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        &copy; 2023 Your Name. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
